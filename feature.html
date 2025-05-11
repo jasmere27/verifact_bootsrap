@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>VeriFact</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('img/blueb.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .glass-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: rgb(209, 178, 178);
+        }
+
+        .accordion-button {
+            background: rgba(255, 255, 255, 0.1);
+            color: rgb(54, 103, 177);
+        }
+
+        .accordion-item {
+            background: transparent;
+            border: none;
+        }
+
+        .accordion-body {
+            color: white;
+        }
+
+        .quiz-box {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255,255,255,0.2);
+            backdrop-filter: blur(6px);
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+   <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+            <img src="img/verfact_logo.png" alt="VeriFact" style="height: 180px;">
+        </a>
+
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="analyze.html" class="nav-item nav-link">Start Fact-checking</a>
+                        <a href="about-us.php" class="nav-item nav-link">About Us</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Other Features</a>
+                            <div class="dropdown-menu bg-light mt-2">
+                                <a href="project.html" class="dropdown-item">Key Technology</a>
+                                <a href="feature.html" class="dropdown-item">Cybersecurity Practices</a>
+                                         </div>
+                        </div>
+                        <a href="reach-us.php" class="nav-item nav-link">Reach us</a>
+                    </div>                   
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <div class="container-fluid pt-5 bg-primary hero-header mb-5">
+    <div class="container pt-5">
+        <div class="row g-5 pt-5">
+            <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                <h1 class="display-4 text-white mb-4 animated slideInRight">Your Security, Your Responsibility.</h1>
+                <!-- Updated href -->
+                
+            </div>
+            <div class="col-lg-6 align-self-end text-center text-lg-end">
+                <img class="img-fluid" src="img/cyb.png" alt="" style="max-width: 70%; height: auto;">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="p-4 glass-container">
+        <h2 class="mb-4">Cybersecurity Awareness Modules</h2>
+
+        <!-- Accordion for interactive learning modules -->
+        <div class="accordion" id="cyberModules">
+            <!-- Module 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="moduleOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        🛡️ Understanding Fake News and Misinformation
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#cyberModules">
+                    <div class="accordion-body">
+                        Learn how to identify misleading headlines, verify sources, and understand the psychology behind misinformation. 
+                        <a href="https://www.apa.org/topics/journalism-facts/misinformation-disinformation" class="btn btn-sm btn-primary mt-2" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="moduleTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        🔒 Safe Browsing & Phishing Protection
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#cyberModules">
+                    <div class="accordion-body">
+                        Learn to spot phishing URLs, use secure browsers, and leverage browser-based tools for safety. 
+                        <a href="https://mytab.link/article/personal-privacy-protection..." class="btn btn-sm btn-primary mt-2" target="_blank">Learn Tips</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="moduleThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                        🧠 How to Spot Manipulated Media
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#cyberModules">
+                    <div class="accordion-body">
+                        Discover signs of doctored images, deepfakes, and AI-generated content using VeriFact News Checker.
+                        <a href="analyze.html" class="btn btn-sm btn-primary mt-2">Start Fact-checking</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="moduleFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                        🔐 Password Management & 2FA
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#cyberModules">
+                    <div class="accordion-body">
+                        Explore best practices for creating strong passwords, password manager tools, and enabling Two-Factor Authentication (2FA).
+                        <a href="https://www.google.com/search?q=password+manager+and+2fa+tools" class="btn btn-sm btn-primary mt-2" target="_blank">Explore Tools</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Module 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="moduleFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                        📱 Social Media Safety Practices
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#cyberModules">
+                    <div class="accordion-body">
+                        Learn how to secure your social media profiles, avoid oversharing, and recognize social engineering tactics.
+                        <a href="https://checkify.com/checklists/social-media-security-checklist/" class="btn btn-sm btn-primary mt-2" target="_blank">Get Checklist</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz Section -->
+        <div class="mt-5 p-4 rounded quiz-box">
+            <h4 class="mb-3">💡 Test Your Knowledge</h4>
+            <p>Take a quick 3-question quiz to see how much you’ve learned!</p>
+            <a href="quiz.php" class="btn btn-success">Start Quiz</a>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Cybersecurity Case Studies Section with Glassmorphism -->
+<div class="container-fluid py-5" style="
+    background: url('img/blueb.png') center center / cover no-repeat;
+">
+    <div class="container py-5">
+        <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+            <h1 class="mb-4 text-white">Basic Cybersecurity Practices</h1>
+        </div>
+
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-lg-4 d-flex align-items-stretch wow fadeIn" data-wow-delay="0.3s">
+                <div class="case-item position-relative overflow-hidden rounded w-100 d-flex flex-column"
+                     style="background: rgba(255, 255, 255, 0.08); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 20px;">
+                    <div class="position-relative flex-grow-1">
+                        <img class="img-fluid w-100 h-100 object-fit-cover rounded-top" src="img/email-sec1.jpg" alt="Email Security" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                        <a class="case-overlay text-decoration-none position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3" href="email-security.php"
+                           style="background: rgba(0, 0, 0, 0.4); border-radius: 20px;">
+                            <small class="text-white">Email Security</small>
+                            <h5 class="lh-base text-white mb-3">Combating Phishing Through User Training and Detection Tools</h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 d-flex align-items-stretch wow fadeIn" data-wow-delay="0.5s">
+                <div class="case-item position-relative overflow-hidden rounded w-100 d-flex flex-column"
+                     style="background: rgba(255, 255, 255, 0.08); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 20px;">
+                    <div class="position-relative flex-grow-1">
+                        <img class="img-fluid w-100 h-100 object-fit-cover rounded-top" src="img/strong-pass.jpg" alt="Password Hygiene" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                        <a class="case-overlay text-decoration-none position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3" href="password-hygiene.php"
+                           style="background: rgba(0, 0, 0, 0.4); border-radius: 20px;">
+                            <small class="text-white">Password Hygiene</small>
+                            <h5 class="lh-base text-white mb-3">Educating Users on Strong Password Creation and Safe Storage</h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 d-flex align-items-stretch wow fadeIn" data-wow-delay="0.7s">
+                <div class="case-item position-relative overflow-hidden rounded w-100 d-flex flex-column"
+                     style="background: rgba(255, 255, 255, 0.08); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 20px;">
+                    <div class="position-relative flex-grow-1">
+                        <img class="img-fluid w-100 h-100 object-fit-cover rounded-top" src="img/access-control.jpg" alt="Access Control" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                        <a class="case-overlay text-decoration-none position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3" href="access-control.php"
+                           style="background: rgba(0, 0, 0, 0.4); border-radius: 20px;">
+                            <small class="text-white">Access Control</small>
+                            <h5 class="lh-base text-white mb-3">Enhancing Login Security with Multi-Factor Authentication (MFA)</h5>
+                            <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+   
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+    <a href="index.html" class="d-inline-block mb-3">
+        <h1 class="text-white">Veri<span class="text-primary">.</span>Fact</h1>
+    </a>
+    <p class="mb-0">
+        VeriFact is your trusted platform for verifying news, promoting digital literacy, and educating users on
+        essential cybersecurity practices. Our goal is to fight misinformation and help users stay safe and informed
+        online.
+    </p>
+</div>
+
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="text-white mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>OLFU Pampanga</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+99111111111</p>
+                    <p><i class="fa fa-envelope me-3"></i>verifact@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="youtube.com"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+               <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+    <h5 class="text-white mb-4">Popular Link</h5>
+    <a class="btn btn-link" href="analyze.html">Fact Checker</a>
+    <a class="btn btn-link" href="about-us.php">About Us</a>
+
+    <!-- Dropdown for Other Features -->
+    <div class="dropdown">
+        <a class="btn btn-link dropdown-toggle" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Other Features
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="featuresDropdown">
+            <li><a class="dropdown-item" href="project.html">Key Technologies</a></li>
+            <li><a class="dropdown-item" href="feature.html">Cyber Security</a></li>
+        </ul>
+    </div>
+
+    <a class="btn btn-link" href="contact.php">Reach Us</a>
+</div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <a class="btn btn-link" href="">News Fact Checking</a>
+                    <a class="btn btn-link" href="feature.html">Learning Modules</a>
+                    <a class="btn btn-link" href="#case-study">Basic Cybersecurity Practices</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
